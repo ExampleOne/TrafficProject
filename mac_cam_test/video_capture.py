@@ -14,7 +14,8 @@ out = cv2.VideoWriter('newcam.avi', fourcc, 20.0, (1280, 720))  # filename, four
 for i in range(60):
     ret, frame = cap.read()  # ret is a bool indicating success
     # print(cap.get(3), cap.get(4))  # Tells us frame size
-    if ret == True:
+    print(frame.shape)
+    if ret:
         #frame = cv2.flip(frame, 0)  # Flips the frame vertically - just for fun
 
         out.write(frame)
