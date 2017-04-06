@@ -8,7 +8,7 @@ cap = cv2.VideoCapture(0)  # 0 refers to the device index or you could pass a vi
 
 
 fourcc = cv2.VideoWriter_fourcc(*'MJPG')  # The argument is the codec or encoding for the video
-out = cv2.VideoWriter('newcam.avi', fourcc, 20.0, (480, 640))  # filename, fourcc, fps, frame size
+out = cv2.VideoWriter('newcam.avi', fourcc, 20.0, (640, 480))  # filename, fourcc, fps, frame size
 # Alright, for some reason, the raspberry pi camera accepts only the 480x640 resolution. Mac cam accepts 1280x720
 
 
